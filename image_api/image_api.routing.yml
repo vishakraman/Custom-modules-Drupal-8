@@ -1,0 +1,7 @@
+image_api.imagesettings:
+  path: '/pixa'
+  defaults:
+    _form:  '\Drupal\image_api\Form\imageSettings'
+    _title: 'Image settings form'
+  requirements:
+    _permission: 'access content'

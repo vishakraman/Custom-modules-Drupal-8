@@ -1,0 +1,12 @@
+<?php
+
+
+function covid_cases_theme($existing, $type, $theme, $path) {
+  return [
+    'covid_live_tracker' => [
+      'variables' => ['countriesdata' => [],'statedata' => [],'traveldata' => []],
+    ],  
+  ];
+}
+
+

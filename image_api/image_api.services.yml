@@ -1,0 +1,5 @@
+services:
+ pixa_api:
+   class: Drupal\image_api\PixabayApi
+   arguments:
+       - '@http_client_factory'

@@ -1,0 +1,13 @@
+covid_cases:
+  version: 1.x
+  js:
+    //cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js: {type: external, attributes: { async: true }} 
+    js/corona_live_tracker.js: {} 
+  css:
+    theme:
+      css/custom_live_tracker.css : {}
+      //cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css: {type: external, minified: true}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    

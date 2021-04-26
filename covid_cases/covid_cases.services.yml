@@ -1,0 +1,5 @@
+services:
+ covid_cases:
+   class: Drupal\covid_cases\CovidApi
+   arguments:
+       - '@http_client_factory'

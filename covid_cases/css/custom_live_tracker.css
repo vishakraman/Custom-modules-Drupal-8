@@ -1,0 +1,12 @@
+table#corona_tracker tr td{
+color: #000!important;
+}
+
+table#areas tr td{
+color: #000!important;
+}
+
+
+#block-coronaliveworldtrackerblock {
+    width: 100%;
+}

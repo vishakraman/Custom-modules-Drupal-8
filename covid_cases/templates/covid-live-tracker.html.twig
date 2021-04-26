@@ -1,0 +1,23 @@
+{{ kint(countriesdata['data']) }}
+<table id="corona_tracker" class="display">
+    <thead>
+        <tr>
+            <th>Location</th>
+            <th>Confirmed</th>
+            <th>Dead</th>
+            <th>Recovered</th>
+            <th>Updateds</th>
+        </tr>
+    </thead>
+        <tbody>
+  {% for key,record in countriesdata['data'] %}
+        <tr>
+            <td>{{ record['location'] }}</td>
+            <td>{{ record['confirmed'] }}</td>
+            <td>{{ record['dead'] }}</td>
+            <td>{{ record['recovered'] }}</td>
+            <td>{{ record['updated'] }}</td>
+        </tr>
+  {% endfor %}
+    </tbody>
+</table>

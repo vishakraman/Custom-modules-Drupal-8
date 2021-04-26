@@ -1,0 +1,12 @@
+{# 
+<h2>Pixa Images from https://pixabay.com/ </h2>
+<div class="owl-carousel owl-theme">
+	 {% for key,record in images['hits'] %}
+    <div class="item"> <img src="{{ record['webformatURL'] }}" alt="{{ record['user'] }}" /></div>
+    {% endfor %}
+</div> #}
+
+
+	 {% for key,record in images['hits'] %}
+    <div class="item"> <img src="{{ record['webformatURL'] }}" alt="{{ record['user'] }}" /></div>
+    {% endfor %}
