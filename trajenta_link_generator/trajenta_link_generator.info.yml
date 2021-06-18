@@ -1,0 +1,8 @@
+name: Trajenta Link Generator
+description: Link Generator Tool Interface
+package: BI custom
+type: module
+dependencies:
+  - block
+version: '8.x-1.0'
+core_version_requirement: ^8.8 || ^9
