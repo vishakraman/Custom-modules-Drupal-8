@@ -1,0 +1,55 @@
+#copy and paste this link in your new webform source tab
+rep_email:
+  '#type': email
+  '#title': 'Rep. Email'
+  '#default_value': '[current-user:mail]'
+  '#required': true
+rep_id:
+  '#type': textfield
+  '#title': 'Rep. ID'
+  '#default_value': '1234'
+  '#required': true
+doctor_name:
+  '#type': textfield
+  '#title': 'Doctor Name'
+doctor_email:
+  '#type': email
+  '#title': 'Doctor Email'
+doctor_veeva_id:
+  '#type': textfield
+  '#title': 'Doctor Veeva ID'
+destination_link:
+  '#type': webform_link
+  '#title': 'Destination Link'
+  '#required': true
+  '#title__access': false
+  '#url__required': true
+deeplink_required:
+  '#type': radios
+  '#title': 'Deeplink Required?'
+  '#options':
+    'Yes': 'Yes'
+    'No': 'No'
+  '#default_value': 'Yes'
+campaign_id_cid:
+  '#type': textfield
+  '#title': 'Campaign ID (CID)'
+doctor_cvm_segmentation:
+  '#type': term_select
+  '#title': 'Doctor CVM Segmentation'
+  '#empty_option': 'Please select'
+  '#vocabulary': doctor_cvm_segmentation
+  '#breadcrumb_delimiter': ''
+zone:
+  '#type': term_select
+  '#title': Zone
+  '#empty_option': 'Please select'
+  '#vocabulary': zone
+  '#breadcrumb_delimiter': ''
+deeplink:
+  '#type': hidden
+  '#title': Deeplink
+actions:
+  '#type': webform_actions
+  '#title': 'Submit button(s)'
+  '#submit__label': 'Generate Referral Link'
