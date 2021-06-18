@@ -1,8 +1,0 @@
-services:
- # trajenta_link_generator.say_hello:
- #   class: Drupal\trajenta_link_generator\HelloServices
- trajenta_link_generator.user_redirect:
-  class: Drupal\trajenta_link_generator\EventSubscriber\UserRedirect
-  arguments: []
-  tags:
-    - { name: event_subscriber }

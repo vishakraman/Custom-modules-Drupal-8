@@ -1,7 +1,0 @@
-trajenta_js:
-  version: 1.x
-  js:
-    js/script.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupalSettings
